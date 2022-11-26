@@ -12,7 +12,7 @@ const fetchApi = async () => {
   );
 
   document.getElementById("advice-number").innerHTML = data.slip.id;
-  document.getElementById("qoutes").innerHTML = data.slip.advice;
+  document.getElementById("qoutes").innerHTML = `"${data.slip.advice}"`;
   //console.log(`clicked: ${data}`);
   //console.log(data);
 };
