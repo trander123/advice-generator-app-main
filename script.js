@@ -6,7 +6,7 @@ document.getElementById("divider").innerHTML = isMobile
   ? '<img src="./images/pattern-divider-mobile.svg" />'
   : '<img src="./images/pattern-divider-desktop.svg" />';
 
-document.getElementById("diceBtn").onclick = async () => {
+const fetchApi = async () => {
   const data = await fetch("https://api.adviceslip.com/advice").then((res) =>
     res.json()
   );
@@ -16,3 +16,9 @@ document.getElementById("diceBtn").onclick = async () => {
   //console.log(`clicked: ${data}`);
   //console.log(data);
 };
+
+document.getElementById("diceBtn").onclick = () => {
+  fetchApi();
+};
+
+fetchApi();

@@ -61,6 +61,8 @@ SECONDARY
 }
 
 #diceBtn {
+  justify-content: center;
+  align-items: center;
   background: var(--clr-n-green);
   width: 4rem;
   height: 4rem;
@@ -70,6 +72,11 @@ SECONDARY
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.2s ease-in-out;
+}
+
+#diceBtn:hover {
+  box-shadow: 0 0px 20px var(--clr-n-green);
 }
 
 .attribution {
