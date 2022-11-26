@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/**
+PRIMARY
+  Light Cyan: hsl(193, 38%, 86%)
+  Neon Green: hsl(150, 100%, 66%)
+SECONDARY
+  Grayish Blue: hsl(217, 19%, 38%)
+  Dark Grayish Blue: hsl(217, 19%, 24%)
+  Dark Blue: hsl(218, 23%, 16%)
+**/
+:root {
+  --ff-primary: "Manrope", sans-serif;
+  --clr-l-cyan: hsl(193, 38%, 86%);
+  --clr-n-green: hsl(150, 100%, 66%);
+
+  --clr-g-blue: hsl(217, 19%, 24%);
+  --clr-d-grayish-b: hsl(217, 19%, 24%);
+  --clr-d-blue: hsl(218, 23%, 16%);
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-d-blue);
+  font-family: var(--ff-primary);
+}
+
+.advice-container {
+  text-align: center;
+  background: var(--clr-d-grayish-b);
+  padding: 2rem;
+  margin: 0px 2rem;
+  max-width: 450px;
+  border-radius: 1rem;
+}
+
+#advice {
+  color: var(--clr-n-green);
+  margin-bottom: 1.5rem;
+  letter-spacing: 5px;
+}
+
+#qoutes {
+  color: var(--clr-l-cyan);
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+}
+
+#divider {
+  margin-bottom: 1.5rem;
+}
+
+#dice-container {
+  position: relative;
+}
+
+#diceBtn {
+  background: var(--clr-n-green);
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
